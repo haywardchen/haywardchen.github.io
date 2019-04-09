@@ -268,7 +268,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/08/Hello/" itemprop="url">Untitled</a></h1>
+                <a class="post-title-link" href="/2019/04/08/Hello/" itemprop="url">Hexo + github搭建blog</a></h1>
         
 
         <div class="post-meta">
@@ -290,6 +290,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -320,7 +342,67 @@
       
         
           
-            
+            <h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>STEP:</p>
+<ol>
+<li><p>先安裝node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">download</a> , 因為hexo 是基於node.js所建立的靜態網頁</p>
+</li>
+<li><p>用npm -v , 來檢查是否安裝成功</p>
+</li>
+<li><p>開一個資料夾 , 用來放hexo ,並且在此資料夾開啟CMD</p>
+</li>
+<li><p>使用npm指令來安裝hexo</p>
+<blockquote>
+<p>npm install -g hexo-cli </p>
+</blockquote>
+</li>
+<li><p>安裝完成後 , 初始化blog(任意取名)</p>
+<blockquote>
+<p>hexo init blog</p>
+</blockquote>
+</li>
+<li><p>執行hexo指令 , 確認是否安裝完成</p>
+<blockquote>
+<p>hexo g</p>
+<p>hexo d</p>
+<p>hexo s</p>
+</blockquote>
+<p> hexo s , 預設網址為localhost:4000</p>
+</li>
+</ol>
+<h2 id="和github做連結"><a href="#和github做連結" class="headerlink" title="和github做連結"></a>和github做連結</h2><p>STEP : </p>
+<pre><code>1.打開git bash , 輸入:
+</code></pre><blockquote>
+<p>git config –global user.name “你的GitHub使用者名稱”</p>
+</blockquote>
+<blockquote>
+<p>git config –global user.email “你的GitHub信箱”</p>
+</blockquote>
+<p>   2.生成SSH密鑰</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “你的GitHub註冊信箱”</p>
+</blockquote>
+<p>然後連續按三個enter就行了</p>
+<p>然後找到生成的.ssh的文件夹中的id_rsa.pub，將内容全部複製，打開 <a href="https://github.com/settings/keys" target="_blank" rel="noopener">setting_key</a> 然後 new SSH key , 將剛剛複製的內容全部貼上</p>
+<p><img src="https://upload.cc/i1/2019/04/09/kF7jtO.jpg" alt></p>
+<p> 4.輸入 </p>
+<blockquote>
+<p>ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
+</blockquote>
+<p><img src="https://upload.cc/i1/2019/04/09/SOphxF.jpg" alt></p>
+<p>看到這樣就成功了，這裡之所以設置GitHub密鑰原因是，通過非對稱加密的公鑰和私鑰来完成加密，公鑰放置在GitHub上，私鑰放置在自己的电脑里。GitHub要求每次推送code都是合法用戶，所以每次推送都需要輸入帳號密碼驗證推送用戶是否是合法用戶，為了節省輸入帳號密碼的步驟，採用了ssh，當每次推送時，git就會匹配你的私鑰跟GitHub上面的公鑰是否是配對的，若匹配則為合法用戶，就可以推送code。</p>
+<p>5.修改 _config.yml (此為最外層的) , 拉到最下面修改成</p>
+<p>deploy:<br>  type: git<br>  repository: ssh:<a href="mailto://git@github.com" target="_blank" rel="noopener">//git@github.com</a>/你的名子/你的名子.github.io.git<br>  branch: master</p>
+<p>(原本repository , 開頭為https , 但我碰到了一個錯誤為 [用戶名]被[用戶名]禁止存取,所以改成上述那樣)</p>
+<p>6.最後打開CMD到放hexo的資料夾輸入</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+<p>hexo clean</p>
+<p>hexo g</p>
+<p>hexo d</p>
+<p>hexo s</p>
+</blockquote>
+<p>即完成hexo + github 建立blog！</p>
+
           
         
       
@@ -409,6 +491,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
             
 
             
