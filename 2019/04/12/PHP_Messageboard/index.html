@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
+<meta name="description" content="PHP 留言板1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&amp;lt;?php    include(&amp;quot;message.php&amp;quot;);    class message_board extends DB&amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP留言板製作(1)">
-<meta property="og:url" content="http://yoursite.com/2019/04/12/PHP_Message/index.html">
+<meta property="og:title" content="PHP留言板製作(2)">
+<meta property="og:url" content="http://yoursite.com/2019/04/12/PHP_Messageboard/index.html">
 <meta property="og:site_name" content="學習&amp;生活">
-<meta property="og:description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
+<meta property="og:description" content="PHP 留言板1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&amp;lt;?php    include(&amp;quot;message.php&amp;quot;);    class message_board extends DB&amp;#123;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-12T10:14:37.542Z">
+<meta property="og:updated_time" content="2019-04-12T09:59:12.656Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP留言板製作(1)">
-<meta name="twitter:description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
+<meta name="twitter:title" content="PHP留言板製作(2)">
+<meta name="twitter:description" content="PHP 留言板1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&amp;lt;?php    include(&amp;quot;message.php&amp;quot;);    class message_board extends DB&amp;#123;">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/12/PHP_Message/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/12/PHP_Messageboard/">
 
 
 
 
 
-  <title>PHP留言板製作(1) | 學習&生活</title>
+  <title>PHP留言板製作(2) | 學習&生活</title>
   
 
 
@@ -252,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/12/PHP_Message/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/12/PHP_Messageboard/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="toby chen">
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PHP留言板製作(1)</h1>
+          <h1 class="post-title" itemprop="name headline">PHP留言板製作(2)</h1>
         
 
         <div class="post-meta">
@@ -322,8 +322,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/12/PHP_Message/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/12/PHP_Message/" itemprop="commentCount"></span>
+                <a href="/2019/04/12/PHP_Messageboard/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/12/PHP_Messageboard/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -351,16 +351,10 @@
       
 
       
-        <h2 id="PHP-留言板"><a href="#PHP-留言板" class="headerlink" title="PHP 留言板"></a>PHP 留言板</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class message</span><br><span class="line">&#123;</span><br><span class="line">    var $name;</span><br><span class="line">    var $time;</span><br><span class="line">    var $content;</span><br><span class="line"></span><br><span class="line">    function __construct($n , $t ,$c)&#123;</span><br><span class="line">        $this-&gt;name = $n;</span><br><span class="line">        $this-&gt;time= $t;</span><br><span class="line">        $this-&gt;content= $c;</span><br><span class="line">    &#125;</span><br><span class="line">    function show()&#123;</span><br><span class="line">        echo &quot;Name :&quot; .$this-&gt;name.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;Time :&quot; .$this-&gt;time.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;Content :&quot; .$this-&gt;content.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;=============================&quot;.&quot;&lt;br&gt;&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class DB&#123;</span><br><span class="line">    var $database =null;</span><br><span class="line"></span><br><span class="line">    function __construct()&#123;</span><br><span class="line">        $dbhost=&quot;localhost&quot;;</span><br><span class="line">        $account=&quot;root&quot;;</span><br><span class="line">        $password=&quot;ocean80405&quot;;</span><br><span class="line">        $this-&gt;dbdata=mysqli_connect($dbhost,$account,$password,&apos;test&apos;);</span><br><span class="line">        if( $this-&gt;dbdata)&#123;</span><br><span class="line">            //echo&quot;DB connect&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">        echo&quot;DB unconnect&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line">&#125;</span><br><span class="line">    function __destruct()&#123;</span><br><span class="line">        mysqli_close( $this-&gt;dbdata);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<p>message.php</p>
-<p> 這個PHP檔是用來紀錄輸入的名字、時間和內容 以及 連接SQL資料庫。</p>
+        <h2 id="PHP-留言板"><a href="#PHP-留言板" class="headerlink" title="PHP 留言板"></a>PHP 留言板</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    include(&quot;message.php&quot;);</span><br><span class="line">    class message_board extends DB&#123;</span><br><span class="line"></span><br><span class="line">        var $message=array();</span><br><span class="line"></span><br><span class="line">       function __construct()&#123;</span><br><span class="line">           parent::__construct();</span><br><span class="line">            $this-&gt;reciveMessage();</span><br><span class="line">            $this-&gt;loadMessage();</span><br><span class="line">            $this-&gt;showAllMessage();</span><br><span class="line">            $this-&gt;showForm();</span><br><span class="line">            &#125;</span><br><span class="line">        function reciveMessage()&#123;</span><br><span class="line">            if(count($_POST)!=0)&#123;</span><br><span class="line">                $this-&gt;saveMessage($_POST[&apos;userName&apos;],date(&quot;Y-m-d h:i:s&quot;,time()),$_POST[&apos;content&apos;]);</span><br><span class="line">            &#125;</span><br><span class="line">           </span><br><span class="line">        &#125;</span><br><span class="line">        function saveMessage($u,$t,$c)&#123;</span><br><span class="line">            $sql = &quot;INSERT INTO all_message (ID,name, time, content)VALUES (null,&apos;$u&apos;, &apos;$t&apos;, &apos;$c&apos;)&quot;;</span><br><span class="line">            mysqli_query($this-&gt;dbdata,$sql);</span><br><span class="line">            </span><br><span class="line">    &#125;</span><br><span class="line">        function loadMessage()&#123;</span><br><span class="line">            $sql=&quot;Select * From all_message&quot; ;</span><br><span class="line"></span><br><span class="line">            $result=mysqli_query($this-&gt;dbdata,$sql);</span><br><span class="line">            while($row=mysqli_fetch_array($result))&#123;</span><br><span class="line">              </span><br><span class="line">                $temp = new message($row[&apos;name&apos;],$row[&apos;time&apos;], $row[&apos;content&apos;]);</span><br><span class="line">                array_push($this-&gt;message,$temp);</span><br><span class="line">            &#125;</span><br><span class="line">         </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        function showAllMessage()&#123;</span><br><span class="line">            foreach($this-&gt;message as $m)&#123;</span><br><span class="line">                $m-&gt;show();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        function showForm()&#123;</span><br><span class="line">            echo &quot;&lt;form action=&apos;&apos; method=&apos;POST&apos; &gt;&quot;;</span><br><span class="line">            echo &quot;Name: &quot;.&quot;&lt;input type=&apos;text&apos; name=&apos;userName&apos; &gt;&quot;.&quot;&lt;br&gt;&quot;;</span><br><span class="line">            echo &quot;Content: &quot;.&quot;&lt;input type=&apos;text&apos; name=&apos;content&apos; &gt;&quot;;</span><br><span class="line">            echo &quot;&lt;input type=&apos;submit&apos; &gt;&quot;;</span><br><span class="line">            echo &quot;&lt;/form&gt;&quot;;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    $m=new message_board;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p>message_board.php</p>
+<p> 這個PHP檔是用來載入資料庫裡的對話，以及將對話和名字傳入資料庫。</p>
 
-
-
-<h4 id="class-message裡的constructor"><a href="#class-message裡的constructor" class="headerlink" title="class message裡的constructor"></a>class message裡的constructor</h4><p>宣告建構子是因為當這個PHP檔被執行時，一定會先執行建構檔所以適合用來記錄名字、時間、內容。</p>
-<h4 id="class-DB裡的constructor"><a href="#class-DB裡的constructor" class="headerlink" title="class DB裡的constructor"></a>class DB裡的constructor</h4><p>由於建構子一定會先被執行，所以在class DB裡的建構子來實作連接資料庫的功能，而解構子則是用來斷開資料庫的! 建構子和解構子一起存在才是良好的coding習慣。</p>
-<p>建議使用mysqli_connect 代替mysql_connect ，PHP7 已經完全棄用mysql_connect了!</p>
-<h3 id="this定義與解釋"><a href="#this定義與解釋" class="headerlink" title="$this定義與解釋"></a>$this定義與解釋</h3><p>The pseudo-variable “$this” is available when a method is called from within an object context. $this is a reference to the calling object (usually the object to which the method belongs, but possibly another object, if the method is called <a href="https://www.php.net/manual/en/language.oop5.static.php" target="_blank" rel="noopener">statically</a>   from the context of a secondary object). As of PHP 7.0.0 calling a non-static method statically from an incompatible context results in $this being undefined inside the method. Calling a non-static method statically from an incompatible context has been deprecated as of PHP 5.6.0. As of PHP 7.0.0 calling a non-static method statically has been generally deprecated (even if called from a compatible context). Before PHP 5.6.0 such calls already triggered a strict notice.</p>
 
 
       
@@ -386,8 +380,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/12/PHP_Messageboard/" rel="next" title="PHP留言板製作(2)">
-                <i class="fa fa-chevron-left"></i> PHP留言板製作(2)
+              <a href="/2019/04/11/OOP/" rel="next" title="物件導向概念">
+                <i class="fa fa-chevron-left"></i> 物件導向概念
               </a>
             
           </div>
@@ -395,6 +389,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/12/PHP_Message/" rel="prev" title="PHP留言板製作(1)">
+                PHP留言板製作(1) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -529,7 +527,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-留言板"><span class="nav-number">1.</span> <span class="nav-text">PHP 留言板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#class-message裡的constructor"><span class="nav-number">1.0.1.</span> <span class="nav-text">class message裡的constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#class-DB裡的constructor"><span class="nav-number">1.0.2.</span> <span class="nav-text">class DB裡的constructor</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#this定義與解釋"><span class="nav-number">1.1.</span> <span class="nav-text">$this定義與解釋</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-留言板"><span class="nav-number">1.</span> <span class="nav-text">PHP 留言板</span></a></li></ol></div>
             
 
           </div>
@@ -699,9 +697,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/04/12/PHP_Message/';
-          this.page.identifier = '2019/04/12/PHP_Message/';
-          this.page.title = 'PHP留言板製作(1)';
+          this.page.url = 'http://yoursite.com/2019/04/12/PHP_Messageboard/';
+          this.page.identifier = '2019/04/12/PHP_Messageboard/';
+          this.page.title = 'PHP留言板製作(2)';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://haywardchen.disqus.com/embed.js';
