@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="學習&amp;生活">
 <meta property="og:description" content="PHP 留言板1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&amp;lt;?php    include(&amp;quot;message.php&amp;quot;);    class message_board extends DB&amp;#123;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-12T09:59:12.656Z">
+<meta property="og:updated_time" content="2019-04-12T10:21:58.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP留言板製作(2)">
 <meta name="twitter:description" content="PHP 留言板1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&amp;lt;?php    include(&amp;quot;message.php&amp;quot;);    class message_board extends DB&amp;#123;">
@@ -355,7 +355,24 @@
 <p>message_board.php</p>
 <p> 這個PHP檔是用來載入資料庫裡的對話，以及將對話和名字傳入資料庫。</p>
 
+<p>由於是將做法宣告在class 所以最後要將class 實體化。</p>
+<h3 id="class-和-object"><a href="#class-和-object" class="headerlink" title="class 和 object"></a>class 和 object</h3><p>簡單來說class 就是一個設計圖，比如說 現在要生產一台車，設計圖上可能會有這台車的品牌、馬力、扭力、型號等</p>
+<blockquote>
+<p>class car{</p>
+<pre><code>string  brand;
 
+int hp;
+
+int torque;
+
+string type;
+</code></pre><p>}</p>
+</blockquote>
+<p>而 要將class實體化就是:</p>
+<blockquote>
+<p>$BMW = new car(“BMW”,”250”,”40”,”330i”);</p>
+</blockquote>
+<p>這個BMW 就是一個照著car 設計圖做出來的實體!</p>
 
       
     </div>
@@ -380,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/11/OOP/" rel="next" title="物件導向概念">
-                <i class="fa fa-chevron-left"></i> 物件導向概念
+              <a href="/2019/04/12/PHP_Message/" rel="next" title="PHP留言板製作(1)">
+                <i class="fa fa-chevron-left"></i> PHP留言板製作(1)
               </a>
             
           </div>
@@ -389,10 +406,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/12/PHP_Message/" rel="prev" title="PHP留言板製作(1)">
-                PHP留言板製作(1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -527,7 +540,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-留言板"><span class="nav-number">1.</span> <span class="nav-text">PHP 留言板</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-留言板"><span class="nav-number">1.</span> <span class="nav-text">PHP 留言板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#class-和-object"><span class="nav-number">1.1.</span> <span class="nav-text">class 和 object</span></a></li></ol></li></ol></div>
             
 
           </div>
