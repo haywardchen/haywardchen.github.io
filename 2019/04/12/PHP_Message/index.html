@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="學習&amp;生活">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP留言板">
+<meta property="og:url" content="http://yoursite.com/2019/04/12/PHP_Message/index.html">
 <meta property="og:site_name" content="學習&amp;生活">
+<meta property="og:description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-12T09:54:29.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="學習&amp;生活">
+<meta name="twitter:title" content="PHP留言板">
+<meta name="twitter:description" content="PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&amp;lt;?phpclass message&amp;#123;    var $name;    var $time;    var $content;    function __construct($n , $t ,$c)&amp;#123;">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/12/PHP_Message/">
 
 
 
 
 
-  <title>學習&生活</title>
+  <title>PHP留言板 | 學習&生活</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/12/PHP_Message/" itemprop="url">PHP留言板</a></h1>
+          <h1 class="post-title" itemprop="name headline">PHP留言板</h1>
         
 
         <div class="post-meta">
@@ -350,18 +351,15 @@
       
 
       
-        
-          
-          PHP 留言板12345678910111213141516171819202122232425262728293031323334353637383940&lt;?phpclass message&
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/12/PHP_Message/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="PHP-留言板"><a href="#PHP-留言板" class="headerlink" title="PHP 留言板"></a>PHP 留言板</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class message</span><br><span class="line">&#123;</span><br><span class="line">    var $name;</span><br><span class="line">    var $time;</span><br><span class="line">    var $content;</span><br><span class="line"></span><br><span class="line">    function __construct($n , $t ,$c)&#123;</span><br><span class="line">        $this-&gt;name = $n;</span><br><span class="line">        $this-&gt;time= $t;</span><br><span class="line">        $this-&gt;content= $c;</span><br><span class="line">    &#125;</span><br><span class="line">    function show()&#123;</span><br><span class="line">        echo &quot;Name :&quot; .$this-&gt;name.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;Time :&quot; .$this-&gt;time.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;Content :&quot; .$this-&gt;content.&quot;&lt;br&gt;&quot;;</span><br><span class="line">        echo &quot;=============================&quot;.&quot;&lt;br&gt;&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class DB&#123;</span><br><span class="line">    var $database =null;</span><br><span class="line"></span><br><span class="line">    function __construct()&#123;</span><br><span class="line">        $dbhost=&quot;localhost&quot;;</span><br><span class="line">        $account=&quot;root&quot;;</span><br><span class="line">        $password=&quot;ocean80405&quot;;</span><br><span class="line">        $this-&gt;dbdata=mysqli_connect($dbhost,$account,$password,&apos;test&apos;);</span><br><span class="line">        if( $this-&gt;dbdata)&#123;</span><br><span class="line">            //echo&quot;DB connect&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">        echo&quot;DB unconnect&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line">&#125;</span><br><span class="line">    function __destruct()&#123;</span><br><span class="line">        mysqli_close( $this-&gt;dbdata);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p>message.php</p>
+<p> 這個PHP檔是用來紀錄輸入的名字、時間和內容 以及 連接SQL資料庫。</p>
+
+
+
+<h4 id="class-message裡的constructor"><a href="#class-message裡的constructor" class="headerlink" title="class message裡的constructor"></a>class message裡的constructor</h4><p>宣告建構子是因為當這個PHP檔被執行時，一定會先執行建構檔所以適合用來記錄名字、時間、內容。</p>
+<h4 id="class-DB裡的constructor"><a href="#class-DB裡的constructor" class="headerlink" title="class DB裡的constructor"></a>class DB裡的constructor</h4><p>由於建構子一定會先被執行，所以在class DB裡的建構子來實作連接資料庫的功能，而解構子則是用來斷開資料庫的! 建構子和解構子一起存在才是良好的coding習慣。</p>
+
       
     </div>
     
@@ -378,173 +376,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/OOP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="toby chen">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="學習&生活">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/11/OOP/" itemprop="url">物件導向概念</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-11T19:05:19+08:00">
-                2019-04-11
-              </time>
+              <a href="/2019/04/11/OOP/" rel="next" title="物件導向概念">
+                <i class="fa fa-chevron-left"></i> 物件導向概念
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OOP/" itemprop="url" rel="index">
-                    <span itemprop="name">OOP</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/04/11/OOP/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/11/OOP/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          基本概念 (類別、物件)類別為一個物件的抽象概念，類別的定義包含物件的屬性，或是操作資料的函式。
-比如說:現在有一個class car，這個class可以記錄汽車的品牌、馬力、型號等。
-
-public
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/11/OOP/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -554,174 +407,11 @@ public
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/Hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="toby chen">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="學習&生活">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/08/Hello/" itemprop="url">Hexo + github搭建blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-08T17:21:44+08:00">
-                2019-04-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/04/08/Hello/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/08/Hello/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          安裝HexoSTEP:
-
-先安裝node.js download , 因為hexo 是基於node.js所建立的靜態網頁
-
-用npm -v , 來檢查是否安裝成功
-
-開一個資料夾 , 用來放hexo 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/08/Hello/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -729,6 +419,20 @@ public
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -749,8 +453,17 @@ public
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -803,6 +516,22 @@ public
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-留言板"><span class="nav-number">1.</span> <span class="nav-text">PHP 留言板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#class-message裡的constructor"><span class="nav-number">1.0.1.</span> <span class="nav-text">class message裡的constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#class-DB裡的constructor"><span class="nav-number">1.0.2.</span> <span class="nav-text">class DB裡的constructor</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -943,6 +672,10 @@ public
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -960,6 +693,18 @@ public
       <script id="dsq-count-scr" src="https://haywardchen.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2019/04/12/PHP_Message/';
+          this.page.identifier = '2019/04/12/PHP_Message/';
+          this.page.title = 'PHP留言板';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://haywardchen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
